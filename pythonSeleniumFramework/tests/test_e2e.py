@@ -1,4 +1,4 @@
-from time import sleep
+ from time import sleep
 
 import pytest
 from selenium.webdriver import Keys
@@ -32,6 +32,10 @@ class TestE2E(BaseClass):
         # self.driver.close()
         sleep(2)
         login.get_logout_button().click()
+        print("Calin's changes1")
+        print("Calin's changes2")
+        print("Calin's changes3")
+        print("Calin's changes4")
 
     @pytest.fixture(params=TestData.test_data)
     def data_load(self, request):
